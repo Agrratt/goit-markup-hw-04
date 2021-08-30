@@ -148,6 +148,8 @@ width: 1200px;
   padding-top: 32px;
   padding-bottom: 32px;
 
+  display: flex;
+
 }
 
 .contacts-item:hover,
@@ -166,14 +168,10 @@ width: 1200px;
   object-fit: contain;
   
 
-  display: inline-flex;
+  display: block;
   padding: 0;
   margin-top: auto;
   margin-bottom: auto;
-  /* background-color: white; */
-  
-
-  /* content: ""; */
 }
 
 
@@ -186,10 +184,9 @@ width: 1200px;
 /*----------------- heroes--------------- */
 .heroes {
   background-image: linear-gradient(
-    rgba(0, 0, 0, 0.2), 
-    rgba(0, 0, 0, 0.2)), 
-    url(../images/heroes/heroes.jpg);
-  
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)), 
+    url(../images/heroes/heroes.jpg);  
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -206,6 +203,7 @@ width: 1200px;
 
   padding-top: 200px;
   padding-bottom: 200px;
+
 }
 .main-title {
   color: #ffffff;
@@ -222,10 +220,11 @@ width: 1200px;
 .button-order {
   display: inline-block;
 
-margin-top: 30px;
+  margin-top: 30px;
   padding: 10px 32px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
 
   font-family: inherit;
   font-weight: bold;
@@ -255,6 +254,17 @@ margin-top: 30px;
 
 .why-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.box-why {
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+
+  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .why-description {
@@ -306,6 +316,7 @@ margin-top: 30px;
   border-radius: 0px 0px 4px 4px;
 
   text-align: center;
+  padding-bottom: 42px;
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
@@ -315,6 +326,40 @@ margin-top: 30px;
 padding-top: 30px;
 padding-bottom: 30px;
 }
+
+.team-box-icon {
+ display: flex;
+  justify-content: space-evenly; 
+}
+
+.team-box-link {
+  fill: #AFB1B8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.team-box-item {
+  width: 44px;
+  height: 44px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-box-link:hover,
+.team-box-link:focus {
+background-color: var(--accent-color);
+width: 44px;
+height: 44px;
+border-radius: 50%;
+fill: #ffffff;
+}
+
+/* fill="var(--color1, #afb1b8)" */
+/* fill="var(--color1, #afb1b8)"  */
 
 .team-name {
   font-weight: 500;
