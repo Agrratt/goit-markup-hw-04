@@ -38,7 +38,6 @@ h4 {
   padding: 0;
 }
 
-
 p {
   margin: 0;
   padding: 0;
@@ -57,19 +56,18 @@ ul {
 
 /*-------------- header------------ */
 
-.header { 
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.header {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header-text {
   display: flex;
   align-items: center;
-width: 1200px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 /*-------------- logo------------ */
@@ -110,7 +108,7 @@ width: 1200px;
 .header-nav {
   padding-top: 32px;
   padding-bottom: 32px;
-  
+
   display: block;
 }
 
@@ -149,7 +147,6 @@ width: 1200px;
   padding-bottom: 32px;
 
   display: flex;
-
 }
 
 .contacts-item:hover,
@@ -162,19 +159,16 @@ width: 1200px;
   margin-right: 10px;
   justify-content: center;
   align-items: center;
-  
+
   width: 16px;
   height: 16px;
   object-fit: contain;
-  
 
   display: block;
   padding: 0;
   margin-top: auto;
   margin-bottom: auto;
 }
-
-
 
 .icon-nav:hover,
 .icon-nav:focus {
@@ -184,13 +178,14 @@ width: 1200px;
 /*----------------- heroes--------------- */
 .heroes {
   background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4), 
-    rgba(47, 48, 58, 0.4)), 
-    url(../images/heroes/heroes.jpg);  
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/heroes/heroes.jpg);
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid #C4C4C4;
+  outline: 1px solid #c4c4c4;
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
@@ -203,7 +198,6 @@ width: 1200px;
 
   padding-top: 200px;
   padding-bottom: 200px;
-
 }
 .main-title {
   color: #ffffff;
@@ -259,7 +253,7 @@ width: 1200px;
 .box-why {
   width: 270px;
   height: 120px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   margin-bottom: 30px;
 
   padding: 25px 100px;
@@ -323,27 +317,26 @@ width: 1200px;
 }
 
 .team-box {
-padding-top: 30px;
-padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-box-icon {
- display: flex;
-  justify-content: space-evenly; 
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .team-box-link {
-  fill: #AFB1B8;
+  fill: #afb1b8;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .team-box-item {
   width: 44px;
   height: 44px;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,22 +344,17 @@ padding-bottom: 30px;
 
 .team-box-link:hover,
 .team-box-link:focus {
-background-color: var(--accent-color);
-width: 44px;
-height: 44px;
-border-radius: 50%;
-fill: #ffffff;
+  background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #ffffff;
 }
-
-/* fill="var(--color1, #afb1b8)" */
-/* fill="var(--color1, #afb1b8)"  */
 
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-
-  /* margin-top: 30px; */
 }
 
 .team-work {
@@ -375,8 +363,56 @@ fill: #ffffff;
   font-weight: normal;
 
   margin-top: 10px;
+}
 
-  /* margin-top: 10px; */
+/*-------------- постоянные клиенты------------ */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 50px;
+}
+
+.clients-box {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-box:hover,
+.clients-box:focus {
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.clients-link:hover .icon-clients,
+.clients-link:focus .icon-clients {
+  fill: var(--accent-color);
+}
+
+.icon-clients {
+  fill: #afb1b8;
 }
 
 /*-------------- portfolio навигация------------ */
@@ -392,7 +428,6 @@ fill: #ffffff;
 .portfolio-nav-list {
   display: flex;
   justify-content: center;
-  
 }
 
 .portfolio-nav-item:not(:last-child) {
@@ -409,15 +444,16 @@ fill: #ffffff;
   text-align: center;
   padding: 6px 22px;
   border-radius: 4px;
-
-  drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
+  border: 0;
 }
 
 .portfolio-nav-button:hover,
 .portfolio-nav-button:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /*-------------- portfolio проекты------------ */
@@ -432,34 +468,36 @@ fill: #ffffff;
 
   margin-top: 34px;
   margin-bottom: 94px;
-  
 }
 
 .project-item {
   margin-right: 30px;
   margin-bottom: 30px;
 
-  background: #FFFFFF;
-  /* border: 1px solid #EEEEEE; */
-  
+  background: #ffffff;
+}
+
+.project-item:focus,
+.project-item:hover {
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-item:nth-child(3n) {
   margin-right: 0px;
-
 }
 
 .project-item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
-
 }
 
 .project-name {
   padding: 20px 24px;
 
-  border-right: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
-  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .project-title {
@@ -478,10 +516,18 @@ fill: #ffffff;
 
 footer {
   background-color: #2f303a;
-
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
+
+.footer-box {
+  display: flex;
+}
+
+.footer-left {
+  margin-right: 70px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .footer-addres {
   font-style: normal;
 
@@ -521,4 +567,50 @@ footer {
 .address-item.link:hover,
 .address-item.link:focus {
   color: var(--accent-color);
+}
+
+.footer-right {
+  margin-top: 72px;
+  margin-bottom: 100px;
+}
+
+.network-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 10px;
+}
+
+.network-item:hover,
+.network-item:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-right-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #ffffff;
+}
+
+.footer-network {
+  display: flex;
+
+  margin-top: 20px;
+}
+
+.network-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-network {
+  fill: #ffffff;
 }
