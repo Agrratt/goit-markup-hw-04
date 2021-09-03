@@ -400,17 +400,13 @@ ul {
 .clients-item {
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .clients-link {
   width: 100%;
   height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 
   justify-content: center;
   align-items: center;
@@ -424,7 +420,7 @@ ul {
 
 .clients-link:hover,
 .clients-link:focus {
-  border: 1px solid var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .icon-clients {
@@ -532,13 +528,13 @@ ul {
 
 footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-box {
   display: flex;
   align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-left {
